@@ -3,3 +3,20 @@
   "cancel": true,
   "link": "https://www.instagram.com/_bhak__bsdk"
 }
+
+
+{
+  "appName": "ChatGPT Premium",
+  "version": "1.2026.223",
+  "forceUpdate": true,
+  "updateUrl": "https://bit.ly/4ehAFNR",
+  "btnUpdateText": "UPDATE NOW",
+  "btnExitText": "EXIT",
+ "changelog": [
+ "Version Premium Unlocked",
+ "Versión 5.6 Unlocked",
+ "Advanced AI Models",
+ "Generate up to more than 30 images",
+ "Ads Removed"
+ ]
+}
