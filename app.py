@@ -29,7 +29,10 @@ def home():
         )
 
         options = {
-            "format": "bestaudio/best",
+    "js_runtimes": {
+        "node": {}
+    },
+    "format": "bestaudio/best",
             "outtmpl": output,
             "postprocessors": [
                 {
