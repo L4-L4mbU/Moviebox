@@ -11,8 +11,15 @@ os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 @app.route("/", methods=["GET", "POST"])
 def home():
+    print("REQUEST:", request.method)
+
     if request.method == "POST":
+        print("FORM DATA:", request.form)
+
         url = request.form.get("url")
+        print("URL:", url)
+
+        # existing code...
 
         filename = str(uuid.uuid4())
 
