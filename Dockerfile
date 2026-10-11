@@ -1,15 +1,15 @@
-FROM python:3.12-slim
+FROM node:20-slim
 
 RUN apt-get update && \
-    apt-get install -y ffmpeg nodejs npm && \
-    rm -rf /var/lib/apt/lists/*
+    apt-get install -y ffmpeg python3 python3-pip && \
+    pip3 install yt-dlp
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY package.json .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN npm install
 
 COPY . .
 
-CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:10000"]
+CMD ["npm","start"]
